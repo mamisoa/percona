@@ -1,7 +1,8 @@
 import os
 import unittest
 
-from main import EnvDefaults, load_env_defaults, parse_args
+from percona.cli import parse_args
+from percona.env import EnvDefaults, load_env_defaults
 
 
 class TestEnvLoading(unittest.TestCase):

@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-percona-cluster-check = "main:main"
+percona-cluster-check = "percona.cli:main"
 
 [tool.uv]
 # Mark project as packageable so entry points (project.scripts) are installed.

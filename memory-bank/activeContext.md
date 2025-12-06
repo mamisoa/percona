@@ -38,3 +38,9 @@
 2025-12-06T20:51:34.886255
 
 - Added warning reporting for wsrep replication lag (applied vs committed) and cross-node drift >3% vs max committed, surfaced in Rich panels without failing cluster health.
+
+2025-12-06T20:57:07.175320
+
+- Refactored monolithic `main.py` into modular `percona` package (env, models, wsrep logic, rendering, CLI).
+- CLI entry now points to `percona.cli:main`; `main.py` kept as a shim for compatibility.
+- Tests updated to import from new module paths.

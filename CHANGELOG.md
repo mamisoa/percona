@@ -1,3 +1,14 @@
+## [2025-12-06T20:57:07.175320]
+
+### Added
+
+- Created modular `percona` package with dedicated files for env defaults, wsrep status logic, rendering, and CLI orchestration to keep scripts maintainable.
+
+### Changed
+
+- Updated CLI entry point to `percona.cli:main` while keeping `main.py` as a backward-compatible shim.
+- Adjusted tests to import from the new module paths after refactor.
+
 ## [2025-12-06T20:51:34.886255]
 
 ### Added
