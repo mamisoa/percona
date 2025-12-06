@@ -1,0 +1,17 @@
+[project]
+name = "percona"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pymysql>=1.1.1",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+percona-cluster-check = "main:main"
+
+[tool.uv]
+# Mark project as packageable so entry points (project.scripts) are installed.
+package = true
