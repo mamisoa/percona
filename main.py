@@ -28,6 +28,8 @@ Exit code:
     1 otherwise.
 """
 
+from __future__ import annotations
+
 import argparse
 import getpass
 import os

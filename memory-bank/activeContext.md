@@ -14,4 +14,7 @@
 2025-12-06T12:11:11.906143
 
 - `.gitignore` extended to skip `.venv/` so virtualenv artifacts are not committed.
+2025-12-06T20:08:47.277720
+
+- Added future annotations import to fix NameError on `EnvDefaults` forward reference.
 

@@ -23,6 +23,12 @@
 
 - Extended `.gitignore` to exclude local `.venv/` to avoid committing virtualenv artifacts.
 
+## [2025-12-06T20:08:47.277720]
+
+### Fixed
+
+- Added `from __future__ import annotations` to resolve forward reference NameError for `EnvDefaults`.
+
 ## [2025-12-06T11:49:31.612378]
 
 ### Added
