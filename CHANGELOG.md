@@ -49,6 +49,12 @@
 
 - Cluster report now labels nodes with a sequence number (Node #1, Node #2, ...).
 
+## [2025-12-06T20:27:39.979915]
+
+### Added
+
+- Report now includes `wsrep_last_applied` and `wsrep_last_committed` per node.
+
 ## [2025-12-06T11:49:31.612378]
 
 ### Added

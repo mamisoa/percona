@@ -26,4 +26,7 @@
 2025-12-06T20:24:01.266216
 
 - Cluster report now prefixes each node with a sequence number (Node #n).
+2025-12-06T20:27:39.979915
+
+- Added `wsrep_last_applied` and `wsrep_last_committed` to the node report output.
 

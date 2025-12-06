@@ -50,6 +50,8 @@ STATUS_VARS = [
     "wsrep_local_state_comment",
     "wsrep_cluster_state_uuid",
     "wsrep_cluster_conf_id",
+    "wsrep_last_applied",
+    "wsrep_last_committed",
 ]
 
 
@@ -154,7 +156,13 @@ def fetch_wsrep_status(host: str, user: str, password: str, port: int) -> NodeSt
                 else:
                     value = row["Value"]
                     # Convert some obvious integers
-                    if var in ("wsrep_cluster_size", "wsrep_local_state", "wsrep_cluster_conf_id"):
+                    if var in (
+                        "wsrep_cluster_size",
+                        "wsrep_local_state",
+                        "wsrep_cluster_conf_id",
+                        "wsrep_last_applied",
+                        "wsrep_last_committed",
+                    ):
                         try:
                             value = int(value)
                         except (TypeError, ValueError):
@@ -248,6 +256,8 @@ def print_report(statuses: List[NodeStatus], cluster_ok: bool) -> None:
               f"({st.vars.get('wsrep_local_state_comment')})")
         print(f"  wsrep_cluster_state_uuid   : {st.vars.get('wsrep_cluster_state_uuid')}")
         print(f"  wsrep_cluster_conf_id      : {st.vars.get('wsrep_cluster_conf_id')}")
+        print(f"  wsrep_last_applied         : {st.vars.get('wsrep_last_applied')}")
+        print(f"  wsrep_last_committed       : {st.vars.get('wsrep_last_committed')}")
         print(f"  NODE HEALTH (local)        : {'OK' if st.ok else 'NOT OK'}")
         print()
 
