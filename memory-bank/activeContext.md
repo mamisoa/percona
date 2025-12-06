@@ -23,4 +23,7 @@
 2025-12-06T20:14:32.965789
 
 - Added db connectivity probe script (`tests/db_connection_check.py`) and documented usage in README.
+2025-12-06T20:24:01.266216
+
+- Cluster report now prefixes each node with a sequence number (Node #n).
 

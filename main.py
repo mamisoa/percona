@@ -233,8 +233,8 @@ def print_report(statuses: List[NodeStatus], cluster_ok: bool) -> None:
     print("Percona XtraDB / Galera cluster status")
     print("=====================================\n")
 
-    for st in statuses:
-        print(f"Node: {st.host}")
+    for idx, st in enumerate(statuses, start=1):
+        print(f"Node #{idx}: {st.host}")
         if st.error:
             print(f"  STATUS: ERROR - {st.error}")
             print()

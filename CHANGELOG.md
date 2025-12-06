@@ -43,6 +43,12 @@
 - Connectivity probe script `tests/db_connection_check.py` using .env values.
 - README documents the quick connectivity test command.
 
+## [2025-12-06T20:24:01.266216]
+
+### Changed
+
+- Cluster report now labels nodes with a sequence number (Node #1, Node #2, ...).
+
 ## [2025-12-06T11:49:31.612378]
 
 ### Added
