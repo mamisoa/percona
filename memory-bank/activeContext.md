@@ -44,3 +44,6 @@
 - Refactored monolithic `main.py` into modular `percona` package (env, models, wsrep logic, rendering, CLI).
 - CLI entry now points to `percona.cli:main`; `main.py` kept as a shim for compatibility.
 - Tests updated to import from new module paths.
+2025-12-06T21:06:14.379733
+
+- Added FastAPI service `percona.api` (health, nodes listing, per-node status, cluster status) returning JSON, with TestClient coverage and documented uvicorn run command; dependencies now include fastapi/uvicorn.

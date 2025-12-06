@@ -37,6 +37,20 @@ Exit code is `0` when the cluster is healthy, `1` otherwise.
 
 If you see an auth message like "`cryptography` package is required for sha256_password or caching_sha2_password", ensure `uv sync` pulled `cryptography` successfully and that system SSL headers are available (e.g., `libssl-dev` on Debian/Ubuntu).
 
+## FastAPI service
+
+An HTTP API exposes the same cluster checks:
+
+```bash
+uv run uvicorn percona.api:app --reload
+```
+
+Endpoints:
+- `GET /health` - service health
+- `GET /nodes` - list hosts from `DB_HOSTS`
+- `GET /nodes/{host}/status` - wsrep status for a host
+- `GET /cluster/status` - aggregated cluster view
+
 ## Environment variables (.env)
 
 The script loads a `.env` file automatically (git-ignored). Supported keys:

@@ -1,3 +1,14 @@
+## [2025-12-06T21:06:14.379733]
+
+### Added
+
+- FastAPI server (`percona.api`) exposing health, node listing, per-node status, and cluster status endpoints with JSON responses.
+- Tests for the API endpoints using FastAPI TestClient and injectable wsrep fetchers.
+
+### Changed
+
+- Declared FastAPI/uvicorn dependencies in `pyproject.toml` and documented API usage in README.
+
 ## [2025-12-06T20:57:07.175320]
 
 ### Added
