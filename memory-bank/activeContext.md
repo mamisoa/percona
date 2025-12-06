@@ -30,3 +30,11 @@
 
 - Added `wsrep_last_applied` and `wsrep_last_committed` to the node report output.
 
+2025-12-06T20:42:58.880590
+
+- Implemented Rich-based console rendering highlighting wsrep readiness, local state, last applied/committed, and node health, plus colored cluster summary.
+- Added `rich` dependency to `pyproject.toml` for enhanced console output.
+
+2025-12-06T20:51:34.886255
+
+- Added warning reporting for wsrep replication lag (applied vs committed) and cross-node drift >3% vs max committed, surfaced in Rich panels without failing cluster health.

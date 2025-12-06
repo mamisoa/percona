@@ -1,3 +1,24 @@
+## [2025-12-06T20:51:34.886255]
+
+### Added
+
+- Warning surfacing for replication lag (`wsrep_last_applied` vs `wsrep_last_committed`) and cross-node drift >3% vs the max committed value, shown in Rich panels without failing cluster health.
+
+### Changed
+
+- Report renders per-node and cluster-level warnings in Rich output.
+
+## [2025-12-06T20:42:58.880590]
+
+### Added
+
+- Rich-powered console rendering with highlighted `wsrep_ready`, `wsrep_local_state`, `wsrep_last_applied`/`wsrep_last_committed`, and local node health indicators.
+
+### Changed
+
+- Cluster report now uses Rich panels and tables for clearer emphasis on key wsrep fields and cluster summary.
+- Declared `rich` dependency in `pyproject.toml` for enhanced console output.
+
 ## [2025-12-06T12:07:06.438667]
 
 ### Added
