@@ -56,3 +56,11 @@ DB_PORT=3306
 ```
 
 Command-line flags override environment defaults.
+
+## Quick connectivity test
+
+To simply verify credentials from `.env`, run:
+
+```bash
+uv run python tests/db_connection_check.py
+```

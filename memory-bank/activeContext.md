@@ -20,4 +20,7 @@
 2025-12-06T20:10:16.330930
 
 - Added `cryptography` dependency for MySQL auth plugins; README updated with guidance.
+2025-12-06T20:14:32.965789
+
+- Added db connectivity probe script (`tests/db_connection_check.py`) and documented usage in README.
 

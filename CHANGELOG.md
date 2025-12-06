@@ -36,6 +36,13 @@
 - Declared `cryptography` dependency to support sha256_password / caching_sha2_password auth paths.
 - README now notes the requirement and how to fix missing-crypto errors.
 
+## [2025-12-06T20:14:32.965789]
+
+### Added
+
+- Connectivity probe script `tests/db_connection_check.py` using .env values.
+- README documents the quick connectivity test command.
+
 ## [2025-12-06T11:49:31.612378]
 
 ### Added
