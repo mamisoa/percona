@@ -17,4 +17,7 @@
 2025-12-06T20:08:47.277720
 
 - Added future annotations import to fix NameError on `EnvDefaults` forward reference.
+2025-12-06T20:10:16.330930
+
+- Added `cryptography` dependency for MySQL auth plugins; README updated with guidance.
 

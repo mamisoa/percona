@@ -29,6 +29,13 @@
 
 - Added `from __future__ import annotations` to resolve forward reference NameError for `EnvDefaults`.
 
+## [2025-12-06T20:10:16.330930]
+
+### Added
+
+- Declared `cryptography` dependency to support sha256_password / caching_sha2_password auth paths.
+- README now notes the requirement and how to fix missing-crypto errors.
+
 ## [2025-12-06T11:49:31.612378]
 
 ### Added
